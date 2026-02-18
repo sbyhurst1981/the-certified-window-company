@@ -349,3 +349,11 @@ footer{
   border-color: rgba(197,138,58,.25);
   background: rgba(42,42,42,.85);
 }
+.reviews .widget-wrap{
+  margin-top: 24px;
+  padding: 22px;
+  background: rgba(20,20,20,.75);
+  border-radius: var(--radius);
+  border: 1px solid rgba(197,138,58,.22);
+  box-shadow: var(--shadow);
+}
