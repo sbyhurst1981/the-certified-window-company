@@ -297,3 +297,55 @@ footer{
   color: rgba(255,255,255,.78);
   text-align:center;
   }
+/* Feature section */
+.feature-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 900px){
+  .feature-grid{ grid-template-columns: 1fr; }
+}
+
+.feature-card{
+  background: rgba(27,27,27,.65);
+  border: 1px solid rgba(197,138,58,.22);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.feature-card h3{
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.ticks{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+.ticks li{
+  position: relative;
+  padding-left: 28px;
+  margin: 10px 0;
+  color: var(--muted);
+}
+.ticks li:before{
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-weight: 900;
+}
+
+/* Make service cards feel interactive */
+.card{
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+.card:hover{
+  transform: translateY(-3px);
+  border-color: rgba(197,138,58,.25);
+  background: rgba(42,42,42,.85);
+}
