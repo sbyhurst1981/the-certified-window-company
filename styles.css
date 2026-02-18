@@ -63,3 +63,15 @@ footer{
   border-top:1px solid var(--border);
   color:rgba(255,255,255,.75);
 }
+.brand .logo {
+  height: 48px;
+  width: auto;
+  display: block;
+  -webkit-box-reflect: below 0
+    linear-gradient(transparent, rgba(0,0,0,0.35));
+}
+@media (min-width: 768px) {
+  .brand .logo {
+    height: 56px;
+  }
+}
