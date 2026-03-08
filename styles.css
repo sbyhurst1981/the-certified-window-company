@@ -46,9 +46,66 @@ section{
   margin:0 auto;
 }
 .hero{
-  text-align:center;
-  padding:80px 18px 50px;
-  max-width:1100px; margin:0 auto;
+  position: relative;
+  min-height: 72vh;
+  background-image: url("images/hero-main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  max-width: none;
+  margin: 0;
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.hero-overlay{
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  width: 100%;
+  padding: 32px 20px;
+}
+
+.hero-kicker{
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 999px;
+  background: rgba(0,0,0,0.25);
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.hero h1{
+  margin: 0 0 16px;
+  color: var(--accent);
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1.05;
+}
+
+.hero-subtitle{
+  margin: 0 auto 28px;
+  max-width: 760px;
+  color: #ffffff;
+  font-size: clamp(1.05rem, 2.5vw, 1.5rem);
+}
+
+.hero-actions{
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .hero h1{margin:0 0 12px; font-size:44px; color:var(--accent)}
 h2{font-size:30px; margin:0 0 18px; color:var(--accent)}
